@@ -1,0 +1,1 @@
+MONGODB_URI = mongodb+srv://alemnatnael20:PZFfhMZRqf4MEqv5@notesdb.b5bkd.mongodb.net

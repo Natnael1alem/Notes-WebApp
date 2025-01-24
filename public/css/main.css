@@ -25,7 +25,7 @@ h1, h2, h3, h4, h5, h6 {
 .btn{
     padding-left: 1.6rem;
     padding-right: 1.6rem;
-    border-radius: 0.5rem;
+    border-radius: 2rem;
 }
 
 .btn-primary {
@@ -60,4 +60,35 @@ h1, h2, h3, h4, h5, h6 {
     --bs-btn-disabled-bg: transparent;
     --bs-btn-disabled-border-color: var(--bs-primary-rgb);
     --bs-gradient: none;
+}
+
+.pagination {
+    --bs-pagination-color: var(--bs-primary-color);
+    --bs-pagination-active-bg: var(--bs-primary-color);
+    --bs-pagination-active-border-color: var(--bs-primary-color);
+}
+
+@media (min-width: 1200px){
+    /* .home {
+        background:
+            url('../img/human-1.svg') left bottom no-repeat,
+            url('../img/human-2.svg') right bottom no-repeat,
+            
+            var(--background-color),
+            url('../img/noise-bg.svg') left top repeat;
+    } */
+}
+
+.home-title::before {
+    content: url('../img/stars.svg');
+    position: absolute;
+    left: -90px;
+    top: -30px 
+}
+
+.home-title::after {
+    content: url('../img/stars.svg');
+    position: absolute;
+    right: -50px;
+    bottom: -30px 
 }

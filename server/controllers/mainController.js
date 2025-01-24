@@ -10,8 +10,8 @@ exports.homepage = async(req, res) => {
     }
     res.render('index', {
         locals,
-        layout: '../views/'
-     });
+        layout: '../views/layouts/front-page'
+    });
 }
 
 
