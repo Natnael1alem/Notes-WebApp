@@ -8,7 +8,7 @@ const passport = require('passport');
 const MongoStore = require('connect-mongo');
 
 const app = express();
-const port = 5000 || process.env.PORT;
+const port = process.env.PORT;
 
 app.use(session({
     secret: 'keyboard cat',
@@ -16,7 +16,8 @@ app.use(session({
     saveUninitialized: true,
     store: MongoStore.create({
         mongoUrl: process.env.MONGODB_URI
-    })
+    }),
+    // cookie: {maxAge: new Date (Date.now() + (3600000))}
 }));
 
 app.use(passport.initialize()); // passport for authentication
