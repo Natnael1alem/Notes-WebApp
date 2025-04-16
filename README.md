@@ -5,5 +5,7 @@ practice tutorial for a note taking website using node, mongo, express, ejs, pas
 
 # How to run
 npm install
+
 setup your .env file (look .env-example)
+
 npm run start
